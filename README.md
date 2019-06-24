@@ -1,8 +1,11 @@
 # LetsMoveIt--dockingstation
-Description of the dockingstation of the project Let's Move It
+The dockingstation is a combination between a elevator and conveyor belt for transporting products up to a height. The task of the dockingstation in this project is to take cases from an AGV and transport them up to the table where an UR-5 is positioned where the UR-5 takes the case from the dockingstation. This dockingstation was custom made by Coomach in 2017 and was automatized in a project at fontys by adding a PLC, multiple sensors and an press on guide. In this project the dockingstation wasn’t further adapted and was only integrated in this project by rewriting the whole software of the PLC. 
 
 ## Getting started
-
+For this project it is assumed you have
++ Windows 7 or higher
++ Lasal class 2
++ Python
 
 ##Prerequisites
 First you need to put an ethernet cable between the PLC and your pc. Next you want to change your IP adress range to that from the PLC.
