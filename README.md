@@ -7,7 +7,7 @@ For this project it is assumed you have
 + Lasal class 2
 + Python
 
-##Prerequisites
+## Prerequisites
 First you need to put an ethernet cable between the PLC and your pc. Next you want to change your IP adress range to that from the PLC.
 First open the network centrum
 ![ethernet](https://user-images.githubusercontent.com/52155322/60008621-b0514680-9674-11e9-93cd-c1542019bed6.JPG)
