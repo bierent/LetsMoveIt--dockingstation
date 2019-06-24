@@ -48,6 +48,17 @@ If it works correctly you should see the next screen and you have opened the pro
 
 ![network](https://user-images.githubusercontent.com/52155322/60008626-b0e9dd00-9674-11e9-8830-56f20a1c8118.JPG)
 
+To see the program click on the right upper corner of the main block.
+
+![class](https://user-images.githubusercontent.com/52155322/60013725-75084500-967f-11e9-8d13-7c2d02104e07.png)
+
+Then you should be able to see the SFC scheme of the PLC.
+
+![SFC](https://user-images.githubusercontent.com/52155322/60013724-75084500-967f-11e9-89b5-c980edc2c8a2.JPG)
+
+You can then run the code by pressing the next button.
+
+![run](https://user-images.githubusercontent.com/52155322/60014013-45a60800-9680-11e9-82f5-123af188ff12.png)
 
 
 
