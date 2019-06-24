@@ -1,5 +1,5 @@
 # LetsMoveIt--dockingstation
-The dockingstation is a combination between a elevator and conveyor belt for transporting products up to a height. The task of the dockingstation in this project is to take cases from an AGV and transport them up to the table where an UR-5 is positioned where the UR-5 takes the case from the dockingstation. This dockingstation was custom made by Coomach in 2017 and was automatized in a project at fontys by adding a PLC, multiple sensors and an press on guide. In this project the dockingstation wasn’t further adapted and was only integrated in this project by rewriting the whole software of the PLC. 
+The dockingstation is a combination between a elevator and conveyor belt for transporting products up to a height. The task of the dockingstation in this project is to take cases from an AGV and transport them up to the table where an UR-5 is positioned where the UR-5 takes the case from the dockingstation. This dockingstation was custom made by Coomach in 2017 and was automatized in a project at fontys by adding a PLC, multiple sensors and an press on guide. In this project the dockingstation wasn’t further adapted and was only integrated in this project by rewriting the whole software of the PLC. The dockingstation is part of collaboration between an AGV and an UR-5. That's is why in the program in- and outputs of the UR-5 and raspberry are writen. The raspberry is connected to the PLC via I/O's and makes connection with the AGV over WiFi. The UR-5 is connnected via I/O. 
 
 ## Getting started
 For this project it is assumed you have
@@ -7,7 +7,7 @@ For this project it is assumed you have
 + Lasal class 2
 + Python
 
-## Prerequisites
+## Dockingstation 
 First you need to put an ethernet cable between the PLC and your pc. Next you want to change your IP adress range to that from the PLC.
 First open the network centrum
 ![ethernet](https://user-images.githubusercontent.com/52155322/60008621-b0514680-9674-11e9-93cd-c1542019bed6.JPG)
@@ -63,8 +63,15 @@ You can then run the code by pressing the next button.
 
 ![run](https://user-images.githubusercontent.com/52155322/60014013-45a60800-9680-11e9-82f5-123af188ff12.png)
 
+## AGV integration
+For integrating the AGV no change is needed. A raspberry pi is connected to the PLC which can communicate with the AGV over WiFi. The raspberry pi starts automatically when the PLC starts up. For using the raspberry pi a screen is needed to change the IP-adres in the python script on the raspberry. 
+The script then starts the dockingstation when the word 'lift' is sent to it. You can test it easily by putting the ip-adress of your laptop in the python script and use the program hercules on windows to send it. Make sure you use the right port in hercules which is by default 8080 in the script. 
 
+## UR-5 integration
+For integrating the UR-5 no change is needed. The UR-5 is connected to the PLC via I/O. 
 
+## Total system
+By default the UR-5 and AGV are integrated in the program so if you don't have those delete those parts.
 
 
 
